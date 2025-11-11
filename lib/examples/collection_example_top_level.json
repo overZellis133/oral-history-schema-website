@@ -1,0 +1,182 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://fossda.org/collections/technology-history",
+  "type": "Collection",
+  "label": {
+    "en": ["Technology History Oral Histories"]
+  },
+  "summary": {
+    "en": [
+      "A comprehensive collection of oral history projects documenting the people, technologies, and movements that shaped modern computing and information technology. Includes multiple thematic sub-collections spanning from early computing through the internet age and beyond."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {"en": ["Organization"]},
+      "value": {"en": ["FOSSDA - Free and Open Source Stories Digital Archive Foundation"]}
+    },
+    {
+      "label": {"en": ["Collection Level"]},
+      "value": {"en": ["Top-Level Collection"]}
+    },
+    {
+      "label": {"en": ["Total Sub-Collections"]},
+      "value": {"en": ["6"]}
+    }
+  ],
+  "rights": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "provider": [
+    {
+      "id": "https://fossda.org",
+      "type": "Agent",
+      "label": {"en": ["FOSSDA"]}
+    }
+  ],
+  "items": [
+    {
+      "id": "https://fossda.org/collections/open-source-pioneers",
+      "type": "Collection",
+      "label": {
+        "en": ["Open Source Pioneers"]
+      },
+      "summary": {
+        "en": ["Interviews with key figures in the open source software movement (1990s-present)"]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/images/collections/open-source-pioneers-thumb.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/collections/early-computing",
+      "type": "Collection",
+      "label": {
+        "en": ["Early Computing Era (1940s-1970s)"]
+      },
+      "summary": {
+        "en": ["Oral histories from pioneers of early computing, including ENIAC, UNIVAC, and mainframe development"]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/images/collections/early-computing-thumb.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/collections/personal-computer-revolution",
+      "type": "Collection",
+      "label": {
+        "en": ["Personal Computer Revolution (1970s-1990s)"]
+      },
+      "summary": {
+        "en": ["Stories from the creation of personal computing, including Apple, Microsoft, and the home computer movement"]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/images/collections/pc-revolution-thumb.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/collections/internet-pioneers",
+      "type": "Collection",
+      "label": {
+        "en": ["Internet Pioneers"]
+      },
+      "summary": {
+        "en": ["Interviews with architects of the internet, including ARPANET, TCP/IP, World Wide Web, and early internet culture"]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/images/collections/internet-pioneers-thumb.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/collections/women-in-computing",
+      "type": "Collection",
+      "label": {
+        "en": ["Women in Computing"]
+      },
+      "summary": {
+        "en": ["Oral histories highlighting women's contributions to computing across all eras"]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/images/collections/women-in-computing-thumb.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/collections/ai-machine-learning",
+      "type": "Collection",
+      "label": {
+        "en": ["AI and Machine Learning History"]
+      },
+      "summary": {
+        "en": ["Interviews documenting the development of artificial intelligence and machine learning from early expert systems to modern deep learning"]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/images/collections/ai-ml-thumb.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "created": "2022-01-15T00:00:00Z",
+    "modified": "2024-11-10T00:00:00Z",
+    "curator": {
+      "name": "FOSSDA Curation Team",
+      "email": "curators@fossda.org",
+      "organization": "FOSSDA"
+    },
+    "time_period": {
+      "start": "1940",
+      "end": "2024"
+    },
+    "geographic_coverage": [
+      {
+        "name": "Global",
+        "geonames_id": "6295630"
+      }
+    ],
+    "subjects": [
+      "Computer Science",
+      "Technology History",
+      "Software Engineering",
+      "Computing History",
+      "Digital Culture",
+      "Innovation"
+    ],
+    "total_duration": 432000,
+    "interview_count": 156,
+    "languages": ["en", "es", "pt", "de", "fr"],
+    "access_level": "public",
+    "related_collections": [
+      {
+        "id": "https://computerhistory.org/collections/oral-histories",
+        "label": "Computer History Museum Oral Histories",
+        "relationship": "partner_collection"
+      },
+      {
+        "id": "https://archive.org/details/computerhistory",
+        "label": "Internet Archive Computer History",
+        "relationship": "preservation_partner"
+      }
+    ]
+  }
+}

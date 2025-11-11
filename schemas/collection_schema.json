@@ -1,0 +1,314 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Oral History Collection Schema",
+  "description": "Schema for collections of oral history interviews, with support for nested collections (IIIF Collection compatible)",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["id", "type", "label", "items"],
+  "properties": {
+    "@context": {
+      "type": ["string", "array"],
+      "description": "JSON-LD context for IIIF compatibility",
+      "default": "http://iiif.io/api/presentation/3/context.json"
+    },
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier (URI) for this collection"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Collection"],
+      "description": "IIIF type identifier"
+    },
+    "label": {
+      "type": "object",
+      "description": "IIIF-compatible multilingual label",
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "description": "IIIF-compatible multilingual summary",
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "metadata": {
+      "type": "array",
+      "description": "IIIF-compatible metadata pairs",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "object",
+            "patternProperties": {
+              "^[a-z]{2}(-[A-Z]{2})?$": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          },
+          "value": {
+            "type": "object",
+            "patternProperties": {
+              "^[a-z]{2}(-[A-Z]{2})?$": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "thumbnail": {
+      "type": "array",
+      "description": "Representative image(s) for the collection",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string", "format": "uri"},
+          "type": {"type": "string", "enum": ["Image"]},
+          "format": {"type": "string"},
+          "width": {"type": "integer"},
+          "height": {"type": "integer"}
+        }
+      }
+    },
+    "rights": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI of the license or rights statement"
+    },
+    "requiredStatement": {
+      "type": "object",
+      "description": "IIIF-compatible attribution statement",
+      "properties": {
+        "label": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        },
+        "value": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "provider": {
+      "type": "array",
+      "description": "IIIF-compatible provider information",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string", "format": "uri"},
+          "type": {"type": "string", "enum": ["Agent"]},
+          "label": {"type": "object"},
+          "homepage": {"type": "array"},
+          "logo": {"type": "array"}
+        }
+      }
+    },
+    "homepage": {
+      "type": "array",
+      "description": "Web page representing the collection",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string", "format": "uri"},
+          "type": {"type": "string", "enum": ["Text"]},
+          "label": {"type": "object"},
+          "format": {"type": "string"}
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "description": "Oral histories or sub-collections in this collection",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "description": "Reference to an oral history interview",
+            "required": ["id", "type"],
+            "properties": {
+              "id": {"type": "string", "format": "uri"},
+              "type": {"type": "string", "enum": ["OralHistory"]},
+              "label": {"type": "object"},
+              "summary": {"type": "object"},
+              "thumbnail": {"type": "array"},
+              "metadata": {"type": "array"}
+            }
+          },
+          {
+            "type": "object",
+            "description": "Reference to a sub-collection",
+            "required": ["id", "type"],
+            "properties": {
+              "id": {"type": "string", "format": "uri"},
+              "type": {"type": "string", "enum": ["Collection"]},
+              "label": {"type": "object"},
+              "summary": {"type": "object"},
+              "thumbnail": {"type": "array"}
+            }
+          }
+        ]
+      }
+    },
+    "collection_metadata": {
+      "type": "object",
+      "description": "Additional collection-specific metadata beyond IIIF",
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When collection was created"
+        },
+        "modified": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last modification date"
+        },
+        "curator": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "email": {"type": "string", "format": "email"},
+            "organization": {"type": "string"}
+          }
+        },
+        "time_period": {
+          "type": "object",
+          "description": "Temporal coverage of collection",
+          "properties": {
+            "start": {"type": "string", "format": "date"},
+            "end": {"type": "string", "format": "date"}
+          }
+        },
+        "geographic_coverage": {
+          "type": "array",
+          "description": "Geographic areas covered by this collection",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "geonames_id": {"type": "string"}
+            }
+          }
+        },
+        "subjects": {
+          "type": "array",
+          "description": "Subject headings for the collection",
+          "items": {"type": "string"}
+        },
+        "total_duration": {
+          "type": "number",
+          "description": "Total duration of all interviews in seconds"
+        },
+        "interview_count": {
+          "type": "integer",
+          "description": "Number of interviews in this collection"
+        },
+        "languages": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Languages represented in collection"
+        },
+        "access_level": {
+          "type": "string",
+          "enum": ["public", "restricted", "private"],
+          "description": "Access level for the collection"
+        },
+        "related_collections": {
+          "type": "array",
+          "description": "Links to related collections",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string", "format": "uri"},
+              "label": {"type": "string"},
+              "relationship": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "aggregated_entities": {
+      "type": "array",
+      "description": "Named entities that appear across multiple interviews in the collection",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entity_id": {"type": "string"},
+          "text": {"type": "string"},
+          "type": {"type": "string"},
+          "frequency": {
+            "type": "integer",
+            "description": "Number of interviews where this entity appears"
+          },
+          "interviews": {
+            "type": "array",
+            "description": "Interview IDs where this entity appears",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "aggregated_themes": {
+      "type": "array",
+      "description": "Themes that span multiple interviews",
+      "items": {
+        "type": "object",
+        "properties": {
+          "theme_id": {"type": "string"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "frequency": {
+            "type": "integer",
+            "description": "Number of interviews where this theme appears"
+          },
+          "interviews": {
+            "type": "array",
+            "description": "Interview IDs where this theme appears",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "search_index": {
+      "type": "object",
+      "description": "Collection-level search capabilities",
+      "properties": {
+        "full_text_search_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Endpoint for searching across all transcripts"
+        },
+        "entity_search_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "theme_search_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}

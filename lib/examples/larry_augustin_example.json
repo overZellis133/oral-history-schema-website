@@ -1,0 +1,1004 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+  "type": "OralHistory",
+  "label": {
+    "en": ["Larry Augustin Interview - FOSSDA Oral History Project"]
+  },
+  "title": "Larry Augustin Interview - FOSSDA Oral History Project",
+  "summary": {
+    "en": [
+      "An oral history interview with Larry Augustin, entrepreneur and open source pioneer, discussing his career from founding VA Linux to angel investing. Topics include the origins of the open source movement, early Linux commercialization, and the evolution of technology entrepreneurship."
+    ]
+  },
+  "description": "Larry Augustin, founder of VA Research/VA Linux and SourceForge, discusses his journey from electrical engineering to open source entrepreneurship. The interview covers his childhood in Ohio, education at Notre Dame and Stanford, involvement in coining the term 'open source,' building VA Linux, work at SugarCRM and AWS, and current work as an angel investor focusing on AI and open source technologies.",
+  "metadata": [
+    {
+      "label": {"en": ["Organization"]},
+      "value": {"en": ["FOSSDA - Free and Open Source Stories Digital Archive Foundation"]}
+    },
+    {
+      "label": {"en": ["Recording Platform"]},
+      "value": {"en": ["theirstory.io"]}
+    },
+    {
+      "label": {"en": ["Interview Type"]},
+      "value": {"en": ["Oral History"]}
+    },
+    {
+      "label": {"en": ["Subject Areas"]},
+      "value": {"en": ["Computer Science", "Open Source Software", "Entrepreneurship", "Technology History"]}
+    }
+  ],
+  "created": "2024-04-16T00:00:00Z",
+  "modified": "2024-04-16T18:00:00Z",
+  "duration": 6129,
+  "language": ["en"],
+  "participants": [
+    {
+      "id": "participant-001",
+      "name": "Elisabetta Mori",
+      "role": "interviewer",
+      "bio": "Historian of computing currently based in Italy, conducting oral history interviews for FOSSDA",
+      "affiliations": ["FOSSDA"],
+      "identifiers": {}
+    },
+    {
+      "id": "participant-002",
+      "name": "Larry Augustin",
+      "role": "interviewee",
+      "bio": "Entrepreneur, angel investor, and advisor to technology companies. Founder of VA Research/VA Linux and SourceForge, former CEO of SugarCRM, and Vice President at Amazon Web Services. Pioneer in open source commercialization.",
+      "affiliations": ["VA Linux Systems", "SourceForge", "SugarCRM", "Amazon Web Services"],
+      "identifiers": {
+        "wikidata": "Q6490196"
+      }
+    }
+  ],
+  "location": {
+    "recording_location": {
+      "name": "Remote Interview via theirstory.io",
+      "description": "Distributed recording session"
+    },
+    "participant_locations": [
+      {
+        "participant_id": "participant-001",
+        "location": {
+          "name": "Home",
+          "city": "Livorno",
+          "region": "Tuscany",
+          "country": "Italy"
+        }
+      },
+      {
+        "participant_id": "participant-002",
+        "location": {
+          "name": "Home",
+          "city": "Los Altos",
+          "region": "California",
+          "country": "United States"
+        }
+      }
+    ]
+  },
+  "rights": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "requiredStatement": {
+    "label": {"en": ["Attribution"]},
+    "value": {"en": ["© 2024 FOSSDA. This interview is licensed under CC BY-NC-SA 4.0. Please cite as: Mori, Elisabetta. Interview with Larry Augustin. FOSSDA Oral History Project. April 16, 2024."]}
+  },
+  "provider": [
+    {
+      "id": "https://fossda.org",
+      "type": "Agent",
+      "label": {"en": ["FOSSDA"]},
+      "homepage": [
+        {
+          "id": "https://fossda.org",
+          "type": "Text",
+          "label": {"en": ["FOSSDA Homepage"]},
+          "format": "text/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https://fossda.org/logo.png",
+          "type": "Image",
+          "format": "image/png"
+        }
+      ]
+    }
+  ],
+  "media": {
+    "video": [
+      {
+        "id": "video-main",
+        "url": "https://fossda.org/media/larry-augustin-2024/video-hd.mp4",
+        "format": "video/mp4",
+        "duration": 6129,
+        "width": 1920,
+        "height": 1080,
+        "quality": "hd"
+      },
+      {
+        "id": "video-sd",
+        "url": "https://fossda.org/media/larry-augustin-2024/video-sd.mp4",
+        "format": "video/mp4",
+        "duration": 6129,
+        "width": 854,
+        "height": 480,
+        "quality": "sd"
+      }
+    ],
+    "audio": [
+      {
+        "id": "audio-main",
+        "url": "https://fossda.org/media/larry-augustin-2024/audio.mp3",
+        "format": "audio/mpeg",
+        "duration": 6129
+      }
+    ]
+  },
+  "transcript": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "seg-001",
+        "speaker_id": "participant-001",
+        "speaker_name": "ELISABETTA MORI",
+        "start_time": 0,
+        "end_time": 60,
+        "text": "FOSSDA, the Free and Open Source Stories Digital Archive Foundation. It's the 16th of April 2024 and I am Elisabetta Mori, an historian of computing currently based in Italy and an oral history interview with FOSSDA. Today I'll be talking to Larry Augustin. Larry Augustin is an entrepreneur, angel investor and advisor to technology companies. He He was the founder of VA Research that became VA Linux, SourceForge. He was part of the team who who coined the term Open Software. He was CEO of SugarCRM and the Vice President for Applications and and Web Services. We are recording on the theirstory.io and I am in Livorno, Tuscany, Italy, and Larry is in his home in Los Altos, California. So thank you and welcome, Larry.",
+        "words": [
+          {"word": "FOSSDA", "start": 0.0, "end": 0.8, "confidence": 0.98},
+          {"word": "the", "start": 0.9, "end": 1.0, "confidence": 0.99},
+          {"word": "Free", "start": 1.1, "end": 1.4, "confidence": 0.99},
+          {"word": "and", "start": 1.5, "end": 1.7, "confidence": 0.99},
+          {"word": "Open", "start": 1.8, "end": 2.1, "confidence": 0.99},
+          {"word": "Source", "start": 2.2, "end": 2.6, "confidence": 0.99},
+          {"word": "Stories", "start": 2.7, "end": 3.2, "confidence": 0.98},
+          {"word": "Digital", "start": 3.3, "end": 3.8, "confidence": 0.99},
+          {"word": "Archive", "start": 3.9, "end": 4.5, "confidence": 0.98},
+          {"word": "Foundation", "start": 4.6, "end": 5.3, "confidence": 0.97}
+        ]
+      },
+      {
+        "id": "seg-002",
+        "speaker_id": "participant-002",
+        "speaker_name": "LARRY AUGUSTIN",
+        "start_time": 60,
+        "end_time": 64,
+        "text": "Thank you, Elisabetta. Happy to be here. Happy to do this.",
+        "words": [
+          {"word": "Thank", "start": 60.0, "end": 60.3, "confidence": 0.99},
+          {"word": "you", "start": 60.4, "end": 60.6, "confidence": 0.99},
+          {"word": "Elisabetta", "start": 60.7, "end": 61.4, "confidence": 0.98},
+          {"word": "Happy", "start": 61.8, "end": 62.1, "confidence": 0.99},
+          {"word": "to", "start": 62.2, "end": 62.3, "confidence": 0.99},
+          {"word": "be", "start": 62.4, "end": 62.5, "confidence": 0.99},
+          {"word": "here", "start": 62.6, "end": 62.9, "confidence": 0.99}
+        ]
+      },
+      {
+        "id": "seg-003",
+        "speaker_id": "participant-001",
+        "speaker_name": "ELISABETTA MORI",
+        "start_time": 64,
+        "end_time": 68,
+        "text": "Yeah, so let's start from the beginning. So where and when were you born?",
+        "words": []
+      },
+      {
+        "id": "seg-004",
+        "speaker_id": "participant-002",
+        "speaker_name": "LARRY AUGUSTIN",
+        "start_time": 71,
+        "end_time": 144,
+        "text": "Oh, I was born 1962 in Dayton, Ohio, the middle of the country in the US. My father was in the Air Force and we had settled in Dayton and ended up growing up there. My mother's side of the family were farmers and had a farm in the east coast of the US, New Hampshire. And I spent a lot of times there. In fact, if you look at sort of my early life, the time I spent in summers working on the farm was part of what helped me become an engineer. My dad was an electrical engineer and so I sort of followed in his footsteps. That was my, you know, sort of goal a whole life was to follow in his footsteps and also be an electrical engineer. But I spent the summers working on the family farm in New Hampshire, you know, baling hay, doing, you know, everything around the place. And I developed this tendency to just fix things. It's part of what drove me to be an engineer.",
+        "words": []
+      },
+      {
+        "id": "seg-005",
+        "speaker_id": "participant-002",
+        "speaker_name": "LARRY AUGUSTIN",
+        "start_time": 144,
+        "end_time": 193,
+        "text": "I often say, when you're out in the field and the tractor breaks, there's nobody to call. You know, we didn't have cell phones, there was no one there. You had to just fix things yourself. And so my whole life, that's how I kind of approach things, which is just learn to do whatever needs to be done and be hands-on and fix things. And what about your mom? What did she do? My mom is a nurse. She grew up on the farm and then she was able to go to nursing school and she became a nurse. And then, you know, after I came along, she retired from that and was a full-time mom.",
+        "words": []
+      },
+      {
+        "id": "seg-006",
+        "speaker_id": "participant-001",
+        "speaker_name": "ELISABETTA MORI",
+        "start_time": 193,
+        "end_time": 198,
+        "text": "And who were the important influences on you in your early life?",
+        "words": []
+      },
+      {
+        "id": "seg-007",
+        "speaker_id": "participant-002",
+        "speaker_name": "LARRY AUGUSTIN",
+        "start_time": 198,
+        "end_time": 251,
+        "text": "Oh, great question. You know, obviously my parents. I mean, I had just huge respects there, wanting to follow in the footsteps of my dad in many ways. But early on in life, I would say I was lucky to have great teachers early in school, grade school and elementary, who really, I guess, influenced me in the value of education, but in all sorts of different disciplines, whether it was mathematics or science. And, you know, I was lucky to have great teachers who helped me there. And, you know, some of that certainly by random. I was lucky.",
+        "words": []
+      },
+      {
+        "id": "seg-008",
+        "speaker_id": "participant-002",
+        "speaker_name": "LARRY AUGUSTIN",
+        "start_time": 251,
+        "end_time": 314,
+        "text": "And I was also lucky in that Dayton, Ohio, is home to something called the Ham Fest, which I don't know if a lot of people know, but it is a gathering of ham radio operators that happens every year. But beyond that sort of just ham radio operators, it's really about people who tinker with electronics. And so I was lucky to have this exposure early on that this interesting thing was happening and I wanted to learn. And so I was a kid who always was experimenting with sort of basic electronics. I had the little kits as a kid where you would build the radio from scratch or you would wire together a little electronic circuits. And I was always kind of tinkering or doing or building something like that.",
+        "words": []
+      }
+    ]
+  },
+  "indexes": [
+    {
+      "id": "index-001",
+      "title": "Introduction and Welcome",
+      "description": "Opening remarks and introduction of participants",
+      "start_time": 0,
+      "end_time": 68,
+      "keywords": ["introduction", "FOSSDA", "participants"]
+    },
+    {
+      "id": "index-002",
+      "title": "Early Life and Family Background",
+      "description": "Larry's childhood in Dayton, Ohio, family background, father's career, mother's nursing career, and summers on the farm",
+      "start_time": 68,
+      "end_time": 314,
+      "keywords": ["childhood", "Dayton Ohio", "family", "farm", "engineer", "electrical engineering"]
+    },
+    {
+      "id": "index-003",
+      "title": "Early Influences and Education",
+      "description": "Important influences including parents, teachers, and the Ham Fest in Dayton",
+      "start_time": 193,
+      "end_time": 314,
+      "keywords": ["influences", "education", "Ham Fest", "electronics", "tinkering"],
+      "parent_id": "index-002"
+    },
+    {
+      "id": "index-004",
+      "title": "School Years and Notre Dame",
+      "description": "High school experience, early programming with punch cards, attending University of Notre Dame for electrical engineering",
+      "start_time": 314,
+      "end_time": 600,
+      "keywords": ["high school", "Notre Dame", "programming", "punch cards", "COBOL"]
+    },
+    {
+      "id": "index-005",
+      "title": "Open Source Movement Origins",
+      "description": "Discussion of coining the term 'open source' and the early open source movement",
+      "start_time": 1200,
+      "end_time": 1800,
+      "keywords": ["open source", "terminology", "movement", "Linux"]
+    },
+    {
+      "id": "index-006",
+      "title": "VA Linux and SourceForge",
+      "description": "Founding and building VA Research/VA Linux, creating SourceForge platform",
+      "start_time": 1800,
+      "end_time": 3000,
+      "keywords": ["VA Linux", "SourceForge", "startup", "IPO", "dot-com"]
+    },
+    {
+      "id": "index-007",
+      "title": "SugarCRM Experience",
+      "description": "Role as CEO of SugarCRM and open source CRM",
+      "start_time": 3600,
+      "end_time": 4200,
+      "keywords": ["SugarCRM", "CRM", "CEO", "open source business"]
+    },
+    {
+      "id": "index-008",
+      "title": "Amazon Web Services",
+      "description": "Work at AWS as Vice President for Applications and Web Services",
+      "start_time": 4800,
+      "end_time": 5400,
+      "keywords": ["AWS", "Amazon", "cloud", "Seattle"]
+    },
+    {
+      "id": "index-009",
+      "title": "Angel Investing Philosophy",
+      "description": "Current work as angel investor, investment strategy, focus on AI and open source",
+      "start_time": 5400,
+      "end_time": 5940,
+      "keywords": ["angel investing", "AI", "open source", "startups", "strategy"]
+    },
+    {
+      "id": "index-010",
+      "title": "Career Reflections and Advice",
+      "description": "Looking back on career, proudest achievements, advice for aspiring entrepreneurs",
+      "start_time": 5940,
+      "end_time": 6120,
+      "keywords": ["advice", "reflections", "entrepreneurship", "learning"]
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-001",
+      "title": "The Tractor Philosophy - Learning by Fixing",
+      "description": "Larry explains how working on the farm taught him to fix things and become hands-on",
+      "start_time": 144,
+      "end_time": 193,
+      "thumbnail_url": "https://fossda.org/media/larry-augustin-2024/thumbnails/clip-001.jpg",
+      "tags": ["philosophy", "learning", "problem-solving", "engineering mindset"],
+      "created_by": "curator-01",
+      "created_at": "2024-04-17T10:00:00Z",
+      "public": true
+    },
+    {
+      "id": "clip-002",
+      "title": "Programming in the Punch Card Era",
+      "description": "Larry describes his first programming experience with punch cards and COBOL",
+      "start_time": 335,
+      "end_time": 545,
+      "thumbnail_url": "https://fossda.org/media/larry-augustin-2024/thumbnails/clip-002.jpg",
+      "tags": ["punch cards", "COBOL", "early computing", "programming history"],
+      "created_by": "curator-01",
+      "created_at": "2024-04-17T10:15:00Z",
+      "public": true
+    },
+    {
+      "id": "clip-003",
+      "title": "Advice for Aspiring Entrepreneurs",
+      "description": "Larry's advice on pursuing passion, learning by doing, and taking risks",
+      "start_time": 5937,
+      "end_time": 6112,
+      "thumbnail_url": "https://fossda.org/media/larry-augustin-2024/thumbnails/clip-003.jpg",
+      "tags": ["advice", "entrepreneurship", "passion", "risk-taking"],
+      "created_by": "curator-01",
+      "created_at": "2024-04-17T11:00:00Z",
+      "public": true
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-001",
+      "name": "Hands-On Problem Solving",
+      "description": "The importance of learning by doing, fixing things yourself, and being hands-on with technology",
+      "occurrences": [
+        {
+          "start_time": 144,
+          "end_time": 193,
+          "segment_id": "seg-005",
+          "strength": "primary"
+        },
+        {
+          "start_time": 5937,
+          "end_time": 6112,
+          "segment_id": "seg-067",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-002", "theme-005"]
+    },
+    {
+      "id": "theme-002",
+      "name": "Importance of Education and Mentorship",
+      "description": "The role of teachers, parents, and early influences in shaping career direction",
+      "occurrences": [
+        {
+          "start_time": 198,
+          "end_time": 251,
+          "segment_id": "seg-007",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-001"]
+    },
+    {
+      "id": "theme-003",
+      "name": "Open Source Philosophy",
+      "description": "Beliefs about open source software, community, and business models",
+      "occurrences": [
+        {
+          "start_time": 1200,
+          "end_time": 1800,
+          "segment_id": "seg-025",
+          "strength": "primary"
+        },
+        {
+          "start_time": 5457,
+          "end_time": 5766,
+          "segment_id": "seg-062",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-006"]
+    },
+    {
+      "id": "theme-004",
+      "name": "Evolution of Technology",
+      "description": "How computing and technology have changed from punch cards to modern AI",
+      "occurrences": [
+        {
+          "start_time": 335,
+          "end_time": 545,
+          "segment_id": "seg-008",
+          "strength": "primary"
+        },
+        {
+          "start_time": 5457,
+          "end_time": 5766,
+          "segment_id": "seg-062",
+          "strength": "secondary"
+        }
+      ],
+      "related_themes": ["theme-003", "theme-007"]
+    },
+    {
+      "id": "theme-005",
+      "name": "Entrepreneurship and Risk-Taking",
+      "description": "Starting companies, taking risks, and learning from failure",
+      "occurrences": [
+        {
+          "start_time": 5638,
+          "end_time": 5874,
+          "segment_id": "seg-064",
+          "strength": "primary"
+        },
+        {
+          "start_time": 5937,
+          "end_time": 6112,
+          "segment_id": "seg-067",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-001", "theme-006"]
+    },
+    {
+      "id": "theme-006",
+      "name": "Building Sustainable Business Models",
+      "description": "Creating viable businesses around open source and new technologies",
+      "occurrences": [
+        {
+          "start_time": 5457,
+          "end_time": 5766,
+          "segment_id": "seg-062",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-003", "theme-005"]
+    },
+    {
+      "id": "theme-007",
+      "name": "AI as Transformative Technology",
+      "description": "The potential of artificial intelligence to restructure software and solve complex problems",
+      "occurrences": [
+        {
+          "start_time": 5457,
+          "end_time": 5766,
+          "segment_id": "seg-062",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-004"]
+    },
+    {
+      "id": "theme-008",
+      "name": "Silicon Valley Culture",
+      "description": "Learning from failure, cultural acceptance of mistakes, and iterative improvement",
+      "occurrences": [
+        {
+          "start_time": 5638,
+          "end_time": 5874,
+          "segment_id": "seg-064",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-005"]
+    },
+    {
+      "id": "theme-009",
+      "name": "Following Your Passion",
+      "description": "Pursuing work you love rather than just chasing financial success",
+      "occurrences": [
+        {
+          "start_time": 5937,
+          "end_time": 6020,
+          "segment_id": "seg-067",
+          "strength": "primary"
+        }
+      ],
+      "related_themes": ["theme-005"]
+    }
+  ],
+  "named_entities": [
+    {
+      "id": "entity-001",
+      "text": "Larry Augustin",
+      "type": "PERSON",
+      "normalized_text": "Larry Augustin",
+      "identifiers": {
+        "wikidata": "Q6490196"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "Today I'll be talking to Larry Augustin"
+        }
+      ]
+    },
+    {
+      "id": "entity-002",
+      "text": "Elisabetta Mori",
+      "type": "PERSON",
+      "normalized_text": "Elisabetta Mori",
+      "identifiers": {},
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "I am Elisabetta Mori, an historian of computing"
+        }
+      ]
+    },
+    {
+      "id": "entity-003",
+      "text": "FOSSDA",
+      "type": "ORGANIZATION",
+      "normalized_text": "Free and Open Source Stories Digital Archive Foundation",
+      "identifiers": {},
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 10,
+          "context": "FOSSDA, the Free and Open Source Stories Digital Archive Foundation"
+        }
+      ]
+    },
+    {
+      "id": "entity-004",
+      "text": "VA Research",
+      "type": "ORGANIZATION",
+      "normalized_text": "VA Research",
+      "identifiers": {
+        "wikidata": "Q7906869"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "founder of VA Research that became VA Linux"
+        }
+      ]
+    },
+    {
+      "id": "entity-005",
+      "text": "VA Linux",
+      "type": "ORGANIZATION",
+      "normalized_text": "VA Linux Systems",
+      "identifiers": {
+        "wikidata": "Q7906869",
+        "wikipedia": "https://en.wikipedia.org/wiki/VA_Software"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "VA Research that became VA Linux"
+        }
+      ]
+    },
+    {
+      "id": "entity-006",
+      "text": "SourceForge",
+      "type": "PRODUCT",
+      "normalized_text": "SourceForge",
+      "identifiers": {
+        "wikidata": "Q507051",
+        "wikipedia": "https://en.wikipedia.org/wiki/SourceForge"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "founder of VA Research that became VA Linux, SourceForge"
+        }
+      ]
+    },
+    {
+      "id": "entity-007",
+      "text": "SugarCRM",
+      "type": "ORGANIZATION",
+      "normalized_text": "SugarCRM",
+      "identifiers": {
+        "wikidata": "Q2031825",
+        "wikipedia": "https://en.wikipedia.org/wiki/SugarCRM"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "He was CEO of SugarCRM"
+        }
+      ]
+    },
+    {
+      "id": "entity-008",
+      "text": "Amazon Web Services",
+      "type": "ORGANIZATION",
+      "normalized_text": "Amazon Web Services",
+      "identifiers": {
+        "wikidata": "Q456157",
+        "wikipedia": "https://en.wikipedia.org/wiki/Amazon_Web_Services"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "Vice President for Applications and Web Services"
+        }
+      ]
+    },
+    {
+      "id": "entity-009",
+      "text": "Dayton, Ohio",
+      "type": "LOCATION",
+      "normalized_text": "Dayton, Ohio, United States",
+      "identifiers": {
+        "wikidata": "Q34739",
+        "wikipedia": "https://en.wikipedia.org/wiki/Dayton,_Ohio"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-004",
+          "start_time": 71,
+          "end_time": 90,
+          "context": "I was born 1962 in Dayton, Ohio"
+        },
+        {
+          "segment_id": "seg-008",
+          "start_time": 251,
+          "end_time": 270,
+          "context": "Dayton, Ohio, is home to something called the Ham Fest"
+        }
+      ]
+    },
+    {
+      "id": "entity-010",
+      "text": "New Hampshire",
+      "type": "LOCATION",
+      "normalized_text": "New Hampshire, United States",
+      "identifiers": {
+        "wikidata": "Q759",
+        "wikipedia": "https://en.wikipedia.org/wiki/New_Hampshire"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-004",
+          "start_time": 71,
+          "end_time": 100,
+          "context": "had a farm in the east coast of the US, New Hampshire"
+        }
+      ]
+    },
+    {
+      "id": "entity-011",
+      "text": "Los Altos, California",
+      "type": "LOCATION",
+      "normalized_text": "Los Altos, California, United States",
+      "identifiers": {
+        "wikidata": "Q845944",
+        "wikipedia": "https://en.wikipedia.org/wiki/Los_Altos,_California"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "Larry is in his home in Los Altos, California"
+        }
+      ]
+    },
+    {
+      "id": "entity-012",
+      "text": "Livorno, Tuscany, Italy",
+      "type": "LOCATION",
+      "normalized_text": "Livorno, Tuscany, Italy",
+      "identifiers": {
+        "wikidata": "Q6761",
+        "wikipedia": "https://en.wikipedia.org/wiki/Livorno"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "I am in Livorno, Tuscany, Italy"
+        }
+      ]
+    },
+    {
+      "id": "entity-013",
+      "text": "University of Notre Dame",
+      "type": "ORGANIZATION",
+      "normalized_text": "University of Notre Dame",
+      "identifiers": {
+        "wikidata": "Q178848",
+        "wikipedia": "https://en.wikipedia.org/wiki/University_of_Notre_Dame"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-009",
+          "start_time": 362,
+          "end_time": 393,
+          "context": "her son should go to the University of Notre Dame"
+        }
+      ]
+    },
+    {
+      "id": "entity-014",
+      "text": "Stebbins High School",
+      "type": "ORGANIZATION",
+      "normalized_text": "Stebbins High School",
+      "identifiers": {},
+      "occurrences": [
+        {
+          "segment_id": "seg-008",
+          "start_time": 322,
+          "end_time": 340,
+          "context": "I went to high school, a little place called Stebbins High School"
+        }
+      ]
+    },
+    {
+      "id": "entity-015",
+      "text": "Ham Fest",
+      "type": "EVENT",
+      "normalized_text": "Dayton Hamvention",
+      "identifiers": {
+        "wikipedia": "https://en.wikipedia.org/wiki/Dayton_Hamvention"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-008",
+          "start_time": 251,
+          "end_time": 280,
+          "context": "Dayton, Ohio, is home to something called the Ham Fest"
+        }
+      ]
+    },
+    {
+      "id": "entity-016",
+      "text": "TRS-80",
+      "type": "PRODUCT",
+      "normalized_text": "TRS-80",
+      "identifiers": {
+        "wikidata": "Q1048781",
+        "wikipedia": "https://en.wikipedia.org/wiki/TRS-80"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-011",
+          "start_time": 540,
+          "end_time": 560,
+          "context": "new machines like the TRS-80"
+        }
+      ]
+    },
+    {
+      "id": "entity-017",
+      "text": "IBM PC",
+      "type": "PRODUCT",
+      "normalized_text": "IBM Personal Computer",
+      "identifiers": {
+        "wikidata": "Q16338",
+        "wikipedia": "https://en.wikipedia.org/wiki/IBM_Personal_Computer"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-011",
+          "start_time": 560,
+          "end_time": 580,
+          "context": "the IBM PC and the Apple machines had come out"
+        }
+      ]
+    },
+    {
+      "id": "entity-018",
+      "text": "COBOL",
+      "type": "TECHNOLOGY",
+      "normalized_text": "COBOL Programming Language",
+      "identifiers": {
+        "wikidata": "Q79934",
+        "wikipedia": "https://en.wikipedia.org/wiki/COBOL"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-010",
+          "start_time": 435,
+          "end_time": 450,
+          "context": "punched cards with cobalt"
+        },
+        {
+          "segment_id": "seg-011",
+          "start_time": 577,
+          "end_time": 597,
+          "context": "writing COBOL programs"
+        }
+      ]
+    },
+    {
+      "id": "entity-019",
+      "text": "Linux",
+      "type": "TECHNOLOGY",
+      "normalized_text": "Linux Operating System",
+      "identifiers": {
+        "wikidata": "Q388",
+        "wikipedia": "https://en.wikipedia.org/wiki/Linux"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 60,
+          "context": "VA Research that became VA Linux"
+        }
+      ]
+    },
+    {
+      "id": "entity-020",
+      "text": "Seattle",
+      "type": "LOCATION",
+      "normalized_text": "Seattle, Washington, United States",
+      "identifiers": {
+        "wikidata": "Q5083",
+        "wikipedia": "https://en.wikipedia.org/wiki/Seattle"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-060",
+          "start_time": 5408,
+          "end_time": 5428,
+          "context": "I did not move to Seattle. I did Seattle part-time"
+        }
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://fossda.org/annotations/anno-001",
+      "type": "Annotation",
+      "motivation": "commenting",
+      "created": "2024-04-17T14:30:00Z",
+      "creator": {
+        "id": "user-researcher-01",
+        "type": "Person",
+        "name": "Research Curator"
+      },
+      "body": {
+        "type": "TextualBody",
+        "value": "This 'tractor philosophy' became a recurring theme throughout Larry's career - the willingness to dive in and fix things even without formal training.",
+        "format": "text/plain",
+        "language": "en"
+      },
+      "target": {
+        "source": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "selector": {
+          "type": "FragmentSelector",
+          "start": 144,
+          "end": 193
+        }
+      }
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://fossda.org/annotations/anno-002",
+      "type": "Annotation",
+      "motivation": "tagging",
+      "created": "2024-04-17T15:00:00Z",
+      "creator": {
+        "id": "user-educator-01",
+        "type": "Person",
+        "name": "CS Educator"
+      },
+      "body": {
+        "type": "TextualBody",
+        "value": "excellent example for computer history courses",
+        "format": "text/plain",
+        "language": "en"
+      },
+      "target": {
+        "source": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "selector": {
+          "type": "FragmentSelector",
+          "start": 335,
+          "end": 545
+        }
+      }
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://fossda.org/annotations/anno-003",
+      "type": "Annotation",
+      "motivation": "correcting",
+      "created": "2024-04-17T16:00:00Z",
+      "creator": {
+        "id": "transcript-reviewer-01",
+        "type": "Person",
+        "name": "Transcript Reviewer"
+      },
+      "body": {
+        "type": "TextualBody",
+        "value": "Note: Audio says 'COBOL' but transcript initially showed 'cobalt' - corrected",
+        "format": "text/plain",
+        "language": "en"
+      },
+      "target": {
+        "source": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "selector": {
+          "type": "FragmentSelector",
+          "start": 435,
+          "end": 450
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "type": "part_of_series",
+      "target_id": "https://fossda.org/series/open-source-pioneers",
+      "description": "Part of the Open Source Pioneers oral history series"
+    },
+    {
+      "type": "related_to",
+      "target_id": "https://fossda.org/interviews/linus-torvalds-2023",
+      "description": "Related interview with Linus Torvalds discussing similar time period"
+    },
+    {
+      "type": "references",
+      "target_id": "https://fossda.org/interviews/eric-raymond-2023",
+      "description": "References shared history of open source movement"
+    }
+  ],
+  "processing": {
+    "transcription": {
+      "method": "hybrid",
+      "engine": "Whisper v3 + Human Review",
+      "version": "3.0",
+      "processed_at": "2024-04-16T20:00:00Z",
+      "reviewed": true,
+      "reviewed_by": "transcript-team-01",
+      "reviewed_at": "2024-04-17T12:00:00Z"
+    },
+    "entity_recognition": {
+      "engine": "spaCy + GPT-4",
+      "version": "1.0",
+      "processed_at": "2024-04-17T10:00:00Z"
+    },
+    "theme_extraction": {
+      "method": "hybrid",
+      "engine": "LDA + Manual Curation",
+      "processed_at": "2024-04-17T14:00:00Z"
+    }
+  },
+  "preservation": {
+    "checksum": {
+      "algorithm": "SHA-256",
+      "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "archived": true,
+    "archive_location": "Internet Archive: https://archive.org/details/fossda-larry-augustin-2024",
+    "backup_locations": [
+      "AWS S3: s3://fossda-backup/interviews/2024/larry-augustin/",
+      "Institutional Repository: https://repository.fossda.org/2024/augustin/"
+    ]
+  }
+}

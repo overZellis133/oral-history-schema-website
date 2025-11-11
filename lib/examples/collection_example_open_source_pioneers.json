@@ -1,0 +1,365 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://fossda.org/collections/open-source-pioneers",
+  "type": "Collection",
+  "label": {
+    "en": ["Open Source Pioneers: Oral Histories"]
+  },
+  "summary": {
+    "en": [
+      "A collection of oral history interviews with key figures in the open source software movement, documenting the technical, social, and business innovations that transformed computing in the 1990s and beyond."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {"en": ["Organization"]},
+      "value": {"en": ["FOSSDA - Free and Open Source Stories Digital Archive Foundation"]}
+    },
+    {
+      "label": {"en": ["Series"]},
+      "value": {"en": ["Open Source Pioneers"]}
+    },
+    {
+      "label": {"en": ["Collection Type"]},
+      "value": {"en": ["Thematic Oral History Series"]}
+    },
+    {
+      "label": {"en": ["Curator"]},
+      "value": {"en": ["Elisabetta Mori"]}
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://fossda.org/images/collections/open-source-pioneers-thumb.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "width": 400,
+      "height": 300
+    }
+  ],
+  "rights": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "requiredStatement": {
+    "label": {"en": ["Attribution"]},
+    "value": {"en": ["© 2024 FOSSDA. All interviews in this collection are licensed under CC BY-NC-SA 4.0."]}
+  },
+  "provider": [
+    {
+      "id": "https://fossda.org",
+      "type": "Agent",
+      "label": {"en": ["FOSSDA"]},
+      "homepage": [
+        {
+          "id": "https://fossda.org",
+          "type": "Text",
+          "label": {"en": ["FOSSDA Homepage"]},
+          "format": "text/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https://fossda.org/logo.png",
+          "type": "Image",
+          "format": "image/png"
+        }
+      ]
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://fossda.org/collections/open-source-pioneers",
+      "type": "Text",
+      "label": {"en": ["View Collection"]},
+      "format": "text/html"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://fossda.org/interviews/linus-torvalds-2023",
+      "type": "OralHistory",
+      "label": {
+        "en": ["Linus Torvalds Interview - Creator of Linux"]
+      },
+      "summary": {
+        "en": ["Interview with Linus Torvalds discussing the creation of Linux, the development model, and the evolution of open source."]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/media/linus-torvalds-2023/thumbnail.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
+      "metadata": [
+        {
+          "label": {"en": ["Interview Date"]},
+          "value": {"en": ["2023-11-15"]}
+        },
+        {
+          "label": {"en": ["Duration"]},
+          "value": {"en": ["2 hours 15 minutes"]}
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+      "type": "OralHistory",
+      "label": {
+        "en": ["Jon 'maddog' Hall Interview - Linux International"]
+      },
+      "summary": {
+        "en": ["Interview with Jon 'maddog' Hall about Linux advocacy, community building, and global adoption."]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/media/maddog-hall-2024/thumbnail.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
+      "metadata": [
+        {
+          "label": {"en": ["Interview Date"]},
+          "value": {"en": ["2024-03-20"]}
+        },
+        {
+          "label": {"en": ["Duration"]},
+          "value": {"en": ["1 hour 37 minutes"]}
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+      "type": "OralHistory",
+      "label": {
+        "en": ["Larry Augustin Interview - VA Linux & SourceForge"]
+      },
+      "summary": {
+        "en": ["Interview with Larry Augustin about founding VA Linux, creating SourceForge, and commercializing open source."]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/media/larry-augustin-2024/thumbnail.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
+      "metadata": [
+        {
+          "label": {"en": ["Interview Date"]},
+          "value": {"en": ["2024-04-16"]}
+        },
+        {
+          "label": {"en": ["Duration"]},
+          "value": {"en": ["1 hour 42 minutes"]}
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/interviews/eric-raymond-2023",
+      "type": "OralHistory",
+      "label": {
+        "en": ["Eric S. Raymond Interview - Cathedral and the Bazaar"]
+      },
+      "summary": {
+        "en": ["Interview with Eric Raymond discussing open source philosophy, the Cathedral and the Bazaar essay, and the Open Source Initiative."]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/media/eric-raymond-2023/thumbnail.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
+      "metadata": [
+        {
+          "label": {"en": ["Interview Date"]},
+          "value": {"en": ["2023-10-08"]}
+        },
+        {
+          "label": {"en": ["Duration"]},
+          "value": {"en": ["2 hours 5 minutes"]}
+        }
+      ]
+    },
+    {
+      "id": "https://fossda.org/interviews/bruce-perens-2024",
+      "type": "OralHistory",
+      "label": {
+        "en": ["Bruce Perens Interview - Open Source Definition"]
+      },
+      "summary": {
+        "en": ["Interview with Bruce Perens about creating the Open Source Definition and early Debian leadership."]
+      },
+      "thumbnail": [
+        {
+          "id": "https://fossda.org/media/bruce-perens-2024/thumbnail.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
+      "metadata": [
+        {
+          "label": {"en": ["Interview Date"]},
+          "value": {"en": ["2024-02-12"]}
+        },
+        {
+          "label": {"en": ["Duration"]},
+          "value": {"en": ["1 hour 52 minutes"]}
+        }
+      ]
+    }
+  ],
+  "collection_metadata": {
+    "created": "2023-10-01T00:00:00Z",
+    "modified": "2024-04-17T00:00:00Z",
+    "curator": {
+      "name": "Elisabetta Mori",
+      "email": "elisabetta@fossda.org",
+      "organization": "FOSSDA"
+    },
+    "time_period": {
+      "start": "1960",
+      "end": "2024"
+    },
+    "geographic_coverage": [
+      {
+        "name": "United States",
+        "geonames_id": "6252001"
+      },
+      {
+        "name": "Finland",
+        "geonames_id": "660013"
+      },
+      {
+        "name": "Global",
+        "geonames_id": "6295630"
+      }
+    ],
+    "subjects": [
+      "Open Source Software",
+      "Linux",
+      "Computer Science History",
+      "Software Engineering",
+      "Technology Entrepreneurship",
+      "Unix",
+      "Free Software Movement"
+    ],
+    "total_duration": 36000,
+    "interview_count": 5,
+    "languages": ["en"],
+    "access_level": "public"
+  },
+  "aggregated_entities": [
+    {
+      "entity_id": "person-linus-torvalds",
+      "text": "Linus Torvalds",
+      "type": "PERSON",
+      "frequency": 4,
+      "interviews": [
+        "https://fossda.org/interviews/linus-torvalds-2023",
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/eric-raymond-2023"
+      ]
+    },
+    {
+      "entity_id": "person-larry-augustin",
+      "text": "Larry Augustin",
+      "type": "PERSON",
+      "frequency": 3,
+      "interviews": [
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/linus-torvalds-2023"
+      ]
+    },
+    {
+      "entity_id": "org-va-linux",
+      "text": "VA Linux",
+      "type": "ORGANIZATION",
+      "frequency": 3,
+      "interviews": [
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/linus-torvalds-2023"
+      ]
+    },
+    {
+      "entity_id": "tech-linux",
+      "text": "Linux",
+      "type": "TECHNOLOGY",
+      "frequency": 5,
+      "interviews": [
+        "https://fossda.org/interviews/linus-torvalds-2023",
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/eric-raymond-2023",
+        "https://fossda.org/interviews/bruce-perens-2024"
+      ]
+    },
+    {
+      "entity_id": "org-sourceforge",
+      "text": "SourceForge",
+      "type": "PRODUCT",
+      "frequency": 2,
+      "interviews": [
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/eric-raymond-2023"
+      ]
+    }
+  ],
+  "aggregated_themes": [
+    {
+      "theme_id": "theme-open-source-philosophy",
+      "name": "Open Source Philosophy and Ethics",
+      "description": "Discussions of open source values, collaboration, and community principles",
+      "frequency": 5,
+      "interviews": [
+        "https://fossda.org/interviews/linus-torvalds-2023",
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/eric-raymond-2023",
+        "https://fossda.org/interviews/bruce-perens-2024"
+      ]
+    },
+    {
+      "theme_id": "theme-commercialization",
+      "name": "Commercializing Open Source",
+      "description": "Building businesses around open source software",
+      "frequency": 3,
+      "interviews": [
+        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/eric-raymond-2023"
+      ]
+    },
+    {
+      "theme_id": "theme-community-building",
+      "name": "Community Building and Advocacy",
+      "description": "Growing and nurturing open source communities globally",
+      "frequency": 4,
+      "interviews": [
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/linus-torvalds-2023",
+        "https://fossda.org/interviews/bruce-perens-2024",
+        "https://fossda.org/interviews/eric-raymond-2023"
+      ]
+    },
+    {
+      "theme_id": "theme-unix-philosophy",
+      "name": "Unix Philosophy and Design Principles",
+      "description": "How Unix principles influenced Linux and open source design",
+      "frequency": 3,
+      "interviews": [
+        "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+        "https://fossda.org/interviews/linus-torvalds-2023",
+        "https://fossda.org/interviews/eric-raymond-2023"
+      ]
+    }
+  ],
+  "search_index": {
+    "full_text_search_url": "https://api.fossda.org/search/collections/open-source-pioneers/fulltext",
+    "entity_search_url": "https://api.fossda.org/search/collections/open-source-pioneers/entities",
+    "theme_search_url": "https://api.fossda.org/search/collections/open-source-pioneers/themes"
+  }
+}

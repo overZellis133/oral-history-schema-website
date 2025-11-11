@@ -1,0 +1,428 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
+  "type": "OralHistory",
+  "label": {
+    "en": ["Jon 'maddog' Hall Interview - FOSSDA Oral History Project"]
+  },
+  "title": "Jon 'maddog' Hall Interview - FOSSDA Oral History Project",
+  "summary": {
+    "en": [
+      "An oral history interview with Jon 'maddog' Hall, Executive Director of Linux International, discussing his decades of work promoting Linux and open source software, his collaboration with Linus Torvalds, and the global growth of the Linux community."
+    ]
+  },
+  "description": "Jon 'maddog' Hall shares his journey from early Unix systems at Bell Labs through becoming one of Linux's most vocal advocates. The interview covers his work at Digital Equipment Corporation, founding Linux International, his friendship with Linus Torvalds, and efforts to bring Linux to developing nations.",
+  "created": "2024-03-20T00:00:00Z",
+  "modified": "2024-03-21T10:00:00Z",
+  "duration": 5820,
+  "language": ["en"],
+  "participants": [
+    {
+      "id": "participant-001",
+      "name": "Elisabetta Mori",
+      "role": "interviewer",
+      "bio": "Historian of computing currently based in Italy",
+      "affiliations": ["FOSSDA"]
+    },
+    {
+      "id": "participant-002",
+      "name": "Jon 'maddog' Hall",
+      "role": "interviewee",
+      "bio": "Executive Director of Linux International, former Distinguished Engineer at Digital Equipment Corporation, and longtime Linux advocate. Known for his work promoting open source software globally.",
+      "affiliations": ["Linux International", "Digital Equipment Corporation"],
+      "identifiers": {
+        "wikidata": "Q92760"
+      }
+    }
+  ],
+  "location": {
+    "recording_location": {
+      "name": "Remote Interview"
+    },
+    "participant_locations": [
+      {
+        "participant_id": "participant-001",
+        "location": {
+          "city": "Livorno",
+          "region": "Tuscany",
+          "country": "Italy"
+        }
+      },
+      {
+        "participant_id": "participant-002",
+        "location": {
+          "city": "Amherst",
+          "region": "New Hampshire",
+          "country": "United States"
+        }
+      }
+    ]
+  },
+  "rights": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "provider": [
+    {
+      "id": "https://fossda.org",
+      "type": "Agent",
+      "label": {"en": ["FOSSDA"]}
+    }
+  ],
+  "transcript": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "seg-001",
+        "speaker_id": "participant-001",
+        "speaker_name": "ELISABETTA MORI",
+        "start_time": 0,
+        "end_time": 45,
+        "text": "Welcome to FOSSDA. Today I'm speaking with Jon 'maddog' Hall, Executive Director of Linux International. Maddog, thank you for joining us today."
+      },
+      {
+        "id": "seg-002",
+        "speaker_id": "participant-002",
+        "speaker_name": "JON HALL",
+        "start_time": 45,
+        "end_time": 70,
+        "text": "It's my pleasure. I've been looking forward to this conversation."
+      },
+      {
+        "id": "seg-003",
+        "speaker_id": "participant-001",
+        "speaker_name": "ELISABETTA MORI",
+        "start_time": 70,
+        "end_time": 90,
+        "text": "Let's start at the beginning. Where did you grow up and how did you first encounter computers?"
+      },
+      {
+        "id": "seg-004",
+        "speaker_id": "participant-002",
+        "speaker_name": "JON HALL",
+        "start_time": 90,
+        "end_time": 280,
+        "text": "I grew up in Pennsylvania, and I got interested in electronics early on. My first real exposure to computers was in college in 1969. I remember using punch cards and batch processing systems. But the real transformation came when I started working with Unix at Bell Labs in the 1970s. That's where I learned about the Unix philosophy - simple tools that do one thing well, and the power of combining them. That philosophy stayed with me throughout my career and is really at the heart of what makes Linux great."
+      }
+    ]
+  },
+  "indexes": [
+    {
+      "id": "index-001",
+      "title": "Introduction",
+      "start_time": 0,
+      "end_time": 90,
+      "keywords": ["introduction", "welcome"]
+    },
+    {
+      "id": "index-002",
+      "title": "Early Life and Unix Days",
+      "start_time": 90,
+      "end_time": 900,
+      "keywords": ["childhood", "Bell Labs", "Unix", "1970s"]
+    },
+    {
+      "id": "index-003",
+      "title": "Meeting Linus Torvalds",
+      "start_time": 900,
+      "end_time": 1800,
+      "keywords": ["Linus Torvalds", "Linux", "1990s", "Helsinki"]
+    },
+    {
+      "id": "index-004",
+      "title": "Founding Linux International",
+      "start_time": 1800,
+      "end_time": 2700,
+      "keywords": ["Linux International", "community", "advocacy"]
+    },
+    {
+      "id": "index-005",
+      "title": "Working with Larry Augustin at VA Linux",
+      "start_time": 2700,
+      "end_time": 3600,
+      "keywords": ["VA Linux", "Larry Augustin", "hardware", "commercialization"]
+    },
+    {
+      "id": "index-006",
+      "title": "Global Linux Adoption",
+      "start_time": 3600,
+      "end_time": 4800,
+      "keywords": ["international", "developing nations", "Brazil", "education"]
+    },
+    {
+      "id": "index-007",
+      "title": "Reflections on Open Source Culture",
+      "start_time": 4800,
+      "end_time": 5820,
+      "keywords": ["philosophy", "community", "collaboration", "future"]
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-001",
+      "title": "First Meeting with Linus Torvalds",
+      "description": "Maddog recalls his first meeting with Linus in Helsinki and immediately recognizing Linux's potential",
+      "start_time": 950,
+      "end_time": 1150,
+      "tags": ["Linus Torvalds", "Linux history", "personal story"],
+      "created_by": "curator-01",
+      "created_at": "2024-03-21T09:00:00Z",
+      "public": true
+    },
+    {
+      "id": "clip-002",
+      "title": "The Unix Philosophy in Linux",
+      "description": "How Bell Labs Unix philosophy influenced Linux design",
+      "start_time": 200,
+      "end_time": 380,
+      "tags": ["Unix", "philosophy", "design principles"],
+      "created_by": "curator-01",
+      "created_at": "2024-03-21T09:30:00Z",
+      "public": true
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-001",
+      "name": "Unix Philosophy and Design Principles",
+      "description": "The influence of Unix design principles on Linux and open source",
+      "occurrences": [
+        {
+          "start_time": 200,
+          "end_time": 380,
+          "segment_id": "seg-004",
+          "strength": "primary"
+        },
+        {
+          "start_time": 4800,
+          "end_time": 5000,
+          "segment_id": "seg-045",
+          "strength": "secondary"
+        }
+      ]
+    },
+    {
+      "id": "theme-002",
+      "name": "Community Building and Advocacy",
+      "description": "Building global communities around open source",
+      "occurrences": [
+        {
+          "start_time": 1800,
+          "end_time": 2700,
+          "segment_id": "seg-018",
+          "strength": "primary"
+        },
+        {
+          "start_time": 3600,
+          "end_time": 4800,
+          "segment_id": "seg-035",
+          "strength": "primary"
+        }
+      ]
+    },
+    {
+      "id": "theme-003",
+      "name": "Linux Commercialization",
+      "description": "The business side of Linux and commercial adoption",
+      "occurrences": [
+        {
+          "start_time": 2700,
+          "end_time": 3600,
+          "segment_id": "seg-025",
+          "strength": "primary"
+        }
+      ]
+    }
+  ],
+  "named_entities": [
+    {
+      "id": "entity-001",
+      "text": "Jon Hall",
+      "type": "PERSON",
+      "normalized_text": "Jon 'maddog' Hall",
+      "identifiers": {
+        "wikidata": "Q92760"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 45
+        }
+      ]
+    },
+    {
+      "id": "entity-002",
+      "text": "Linus Torvalds",
+      "type": "PERSON",
+      "normalized_text": "Linus Torvalds",
+      "identifiers": {
+        "wikidata": "Q34213",
+        "wikipedia": "https://en.wikipedia.org/wiki/Linus_Torvalds"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-012",
+          "start_time": 950,
+          "end_time": 1150,
+          "context": "First meeting with Linus in Helsinki"
+        },
+        {
+          "segment_id": "seg-015",
+          "start_time": 1400,
+          "end_time": 1600,
+          "context": "Working relationship with Linus"
+        }
+      ]
+    },
+    {
+      "id": "entity-003",
+      "text": "Larry Augustin",
+      "type": "PERSON",
+      "normalized_text": "Larry Augustin",
+      "identifiers": {
+        "wikidata": "Q6490196"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-025",
+          "start_time": 2700,
+          "end_time": 2900,
+          "context": "Working with Larry at VA Linux"
+        }
+      ]
+    },
+    {
+      "id": "entity-004",
+      "text": "Bell Labs",
+      "type": "ORGANIZATION",
+      "normalized_text": "Bell Laboratories",
+      "identifiers": {
+        "wikidata": "Q186846",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bell_Labs"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-004",
+          "start_time": 150,
+          "end_time": 200,
+          "context": "Working with Unix at Bell Labs"
+        }
+      ]
+    },
+    {
+      "id": "entity-005",
+      "text": "Linux International",
+      "type": "ORGANIZATION",
+      "normalized_text": "Linux International",
+      "identifiers": {
+        "wikidata": "Q1247046",
+        "wikipedia": "https://en.wikipedia.org/wiki/Linux_International"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-001",
+          "start_time": 0,
+          "end_time": 45
+        },
+        {
+          "segment_id": "seg-018",
+          "start_time": 1800,
+          "end_time": 2000
+        }
+      ]
+    },
+    {
+      "id": "entity-006",
+      "text": "VA Linux",
+      "type": "ORGANIZATION",
+      "normalized_text": "VA Linux Systems",
+      "identifiers": {
+        "wikidata": "Q7906869"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-025",
+          "start_time": 2700,
+          "end_time": 2900
+        }
+      ]
+    },
+    {
+      "id": "entity-007",
+      "text": "Digital Equipment Corporation",
+      "type": "ORGANIZATION",
+      "normalized_text": "Digital Equipment Corporation",
+      "identifiers": {
+        "wikidata": "Q333856",
+        "wikipedia": "https://en.wikipedia.org/wiki/Digital_Equipment_Corporation"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-008",
+          "start_time": 600,
+          "end_time": 700
+        }
+      ]
+    },
+    {
+      "id": "entity-008",
+      "text": "Unix",
+      "type": "TECHNOLOGY",
+      "normalized_text": "Unix Operating System",
+      "identifiers": {
+        "wikidata": "Q11368",
+        "wikipedia": "https://en.wikipedia.org/wiki/Unix"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-004",
+          "start_time": 150,
+          "end_time": 280
+        }
+      ]
+    },
+    {
+      "id": "entity-009",
+      "text": "Linux",
+      "type": "TECHNOLOGY",
+      "normalized_text": "Linux Operating System",
+      "identifiers": {
+        "wikidata": "Q388",
+        "wikipedia": "https://en.wikipedia.org/wiki/Linux"
+      },
+      "occurrences": [
+        {
+          "segment_id": "seg-004",
+          "start_time": 250,
+          "end_time": 280
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "type": "part_of_series",
+      "target_id": "https://fossda.org/series/open-source-pioneers",
+      "description": "Part of the Open Source Pioneers oral history series"
+    },
+    {
+      "type": "related_to",
+      "target_id": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+      "description": "Both discuss VA Linux and early Linux commercialization"
+    },
+    {
+      "type": "related_to",
+      "target_id": "https://fossda.org/interviews/linus-torvalds-2023",
+      "description": "Discusses first meeting and relationship with Linus Torvalds"
+    }
+  ],
+  "processing": {
+    "transcription": {
+      "method": "hybrid",
+      "engine": "Whisper v3 + Human Review",
+      "processed_at": "2024-03-20T18:00:00Z",
+      "reviewed": true
+    }
+  }
+}

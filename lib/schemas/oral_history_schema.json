@@ -125,7 +125,7 @@
           "affiliations": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "Organization or institution"
+            "description": "Organizations or institutions"
           },
           "identifiers": {
             "type": "object",

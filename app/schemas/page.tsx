@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { FileJson, GitCompare } from 'lucide-react'
+import { FileJson, GitCompare, Github, MessageSquare, GitBranch, ExternalLink } from 'lucide-react'
 
 export default function SchemasPage() {
   return (
@@ -11,6 +11,41 @@ export default function SchemasPage() {
         <p className="text-lg text-muted-foreground">
           Explore the JSON schemas that define the structure of oral history metadata
         </p>
+      </div>
+
+      {/* Collaboration Section */}
+      <div className="mb-6 border-b pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div className="flex-1">
+            <h3 className="text-sm font-semibold mb-1">Collaborate on Schemas</h3>
+            <p className="text-xs text-muted-foreground">
+              Help improve the schemas by sharing feedback, proposing changes, or joining discussions
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <Button asChild variant="outline" size="sm">
+              <a href="https://github.com/overZellis133/oral-history-schema-website/issues/new?template=schema-feedback.md" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="h-3.5 w-3.5 mr-1.5" />
+                Feedback
+                <ExternalLink className="h-3 w-3 ml-1.5" />
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="sm">
+              <a href="https://github.com/overZellis133/oral-history-schema-website" target="_blank" rel="noopener noreferrer">
+                <GitBranch className="h-3.5 w-3.5 mr-1.5" />
+                Propose Changes
+                <ExternalLink className="h-3 w-3 ml-1.5" />
+              </a>
+            </Button>
+            <Button asChild variant="ghost" size="sm">
+              <a href="https://github.com/overZellis133/oral-history-schema-website/discussions" target="_blank" rel="noopener noreferrer">
+                <Github className="h-3.5 w-3.5 mr-1.5" />
+                Discussions
+                <ExternalLink className="h-3 w-3 ml-1.5" />
+              </a>
+            </Button>
+          </div>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 mb-8">

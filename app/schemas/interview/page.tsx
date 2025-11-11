@@ -3,6 +3,7 @@ import { JsonViewer } from '@/components/JsonViewer'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { loadSchema } from '@/lib/loadSchemas'
 import { loadExample } from '@/lib/loadExamples'
+import { CollaborationSection } from '@/components/CollaborationSection'
 
 export default async function InterviewSchemaPage() {
   const schema = loadSchema('oral_history_schema.json')
@@ -21,6 +22,11 @@ export default async function InterviewSchemaPage() {
           The core schema for individual oral history interviews with transcripts, metadata, clips, themes, and IIIF compatibility
         </p>
       </div>
+
+      <CollaborationSection 
+        schemaName="Interview Schema"
+        schemaFile="oral_history_schema.json"
+      />
 
       <Tabs defaultValue="interactive" className="w-full">
         <TabsList className="grid w-full grid-cols-3">

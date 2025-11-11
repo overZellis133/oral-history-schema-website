@@ -3,6 +3,7 @@ import { JsonViewer } from '@/components/JsonViewer'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { loadSchema } from '@/lib/loadSchemas'
 import { loadExample } from '@/lib/loadExamples'
+import { CollaborationSection } from '@/components/CollaborationSection'
 
 export default async function CollectionSchemaPage() {
   const schema = loadSchema('collection_schema.json')
@@ -21,6 +22,11 @@ export default async function CollectionSchemaPage() {
           Schema for organizing multiple interviews into collections with aggregated metadata, themes, and entities
         </p>
       </div>
+
+      <CollaborationSection 
+        schemaName="Collection Schema"
+        schemaFile="collection_schema.json"
+      />
 
       <Tabs defaultValue="interactive" className="w-full">
         <TabsList className="grid w-full grid-cols-3">

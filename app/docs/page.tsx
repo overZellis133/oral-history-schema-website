@@ -8,12 +8,12 @@ export default function DocsPage() {
 
   // Map slugs to readable titles
   const titleMap: Record<string, string> = {
-    'readme': 'Overview',
-    'collections-guide': 'Collections Guide',
-    'implementation-guide': 'Implementation Guide',
-    'package-summary': 'Package Summary',
-    'architecture-diagram': 'Architecture Diagram',
-    'global-community-archives-guide': 'Global Community Archives Guide',
+    'README': 'Overview',
+    'COLLECTIONS_GUIDE': 'Collections Guide',
+    'IMPLEMENTATION_GUIDE': 'Implementation Guide',
+    'PACKAGE_SUMMARY': 'Package Summary',
+    'ARCHITECTURE_DIAGRAM': 'Architecture Diagram',
+    'GLOBAL_COMMUNITY_ARCHIVES_GUIDE': 'Global Community Archives Guide',
   }
 
   return (
@@ -27,7 +27,7 @@ export default function DocsPage() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {docs.map((doc) => {
-          const title = titleMap[doc.slug] || doc.title || doc.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+          const title = titleMap[doc.slug] || doc.title || doc.slug.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
           return (
             <Card key={doc.slug} className="hover:shadow-lg transition-shadow">
               <CardHeader>

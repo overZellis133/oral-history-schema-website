@@ -18,7 +18,7 @@ export function loadDoc(slug: string): DocMetadata | null {
       slug,
       content: docContent,
       data,
-      title: data.title || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+      title: data.title || slug.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
     }
   } catch {
     return null

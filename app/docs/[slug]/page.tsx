@@ -35,15 +35,15 @@ export default async function DocPage({ params }: PageProps) {
   }
 
   const titleMap: Record<string, string> = {
-    'readme': 'Overview',
-    'collections-guide': 'Collections Guide',
-    'implementation-guide': 'Implementation Guide',
-    'package-summary': 'Package Summary',
-    'architecture-diagram': 'Architecture Diagram',
-    'global-community-archives-guide': 'Global Community Archives Guide',
+    'README': 'Overview',
+    'COLLECTIONS_GUIDE': 'Collections Guide',
+    'IMPLEMENTATION_GUIDE': 'Implementation Guide',
+    'PACKAGE_SUMMARY': 'Package Summary',
+    'ARCHITECTURE_DIAGRAM': 'Architecture Diagram',
+    'GLOBAL_COMMUNITY_ARCHIVES_GUIDE': 'Global Community Archives Guide',
   }
 
-  const title = titleMap[slug] || doc.title || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+  const title = titleMap[slug] || doc.title || slug.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">

@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { setSearchTrigger } from '@/lib/searchTrigger'
 
 interface SearchResult {
   type: 'schema' | 'example' | 'doc'
@@ -35,6 +36,7 @@ export function Search() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // Handle keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
@@ -47,8 +49,32 @@ export function Search() {
     }
 
     document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
+    
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
   }, [isOpen])
+
+  // Register global trigger function
+  useEffect(() => {
+    setSearchTrigger(() => setIsOpen(true))
+    return () => {
+      setSearchTrigger(null as any)
+    }
+  }, [])
+
+  // Handle custom openSearch event (fallback)
+  useEffect(() => {
+    const handleOpenSearchEvent = () => {
+      setIsOpen(true)
+    }
+
+    document.addEventListener('openSearch', handleOpenSearchEvent)
+    
+    return () => {
+      document.removeEventListener('openSearch', handleOpenSearchEvent)
+    }
+  }, [])
 
   // Focus input when modal opens
   useEffect(() => {

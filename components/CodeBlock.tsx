@@ -23,8 +23,8 @@ export function CodeBlock({ code, language = 'text' }: CodeBlockProps) {
   }
 
   return (
-    <div className="relative group">
-      <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+    <div className="relative group my-4">
+      <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
         <button
           onClick={copyToClipboard}
           className="flex items-center gap-1 px-2 py-1 text-xs bg-background border rounded hover:bg-muted transition-colors"
@@ -43,8 +43,8 @@ export function CodeBlock({ code, language = 'text' }: CodeBlockProps) {
           )}
         </button>
       </div>
-      <pre className="overflow-x-auto p-4 rounded-lg bg-slate-900 dark:bg-slate-950 text-slate-100 text-sm font-mono">
-        <code className={`language-${language}`}>{code}</code>
+      <pre className="overflow-x-auto p-4 rounded-lg bg-gray-900 dark:bg-slate-950 text-gray-100 dark:text-slate-100 text-sm font-mono">
+        <code className={`language-${language} text-gray-100 dark:text-slate-100`}>{code}</code>
       </pre>
     </div>
   )

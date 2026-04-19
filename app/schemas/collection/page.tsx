@@ -1,6 +1,7 @@
+import { Suspense } from 'react'
 import { SchemaViewerWithHighlight } from '@/components/SchemaViewerWithHighlight'
 import { JsonViewer } from '@/components/JsonViewer'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { SchemaTabs } from '@/components/SchemaTabs'
 import { loadSchema } from '@/lib/loadSchemas'
 import { loadExample } from '@/lib/loadExamples'
 import { CollaborationSection } from '@/components/CollaborationSection'
@@ -23,46 +24,39 @@ export default async function CollectionSchemaPage() {
         </p>
       </div>
 
-      <CollaborationSection 
+      <CollaborationSection
         schemaName="Collection Schema"
         schemaFile="collection_schema.json"
       />
 
-      <Tabs defaultValue="interactive" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="interactive">Interactive View</TabsTrigger>
-          <TabsTrigger value="raw">Raw JSON</TabsTrigger>
-          {example && <TabsTrigger value="example">With Example</TabsTrigger>}
-        </TabsList>
-
-        <TabsContent value="interactive" className="mt-6">
-          <div className="border rounded-lg p-6 bg-card">
-            <SchemaViewerWithHighlight schema={schema} />
-          </div>
-        </TabsContent>
-
-        <TabsContent value="raw" className="mt-6">
-          <JsonViewer data={schema} title="Collection Schema JSON" defaultExpanded={false} />
-        </TabsContent>
-
-        {example && (
-          <TabsContent value="example" className="mt-6">
-            <div className="grid lg:grid-cols-2 gap-6">
-              <div>
-                <h2 className="text-xl font-semibold mb-4">Schema Structure</h2>
-                <div className="border rounded-lg p-4 bg-card max-h-[800px] overflow-auto">
-                  <SchemaViewerWithHighlight schema={schema} />
+      <Suspense fallback={null}>
+        <SchemaTabs
+          interactive={
+            <div className="border rounded-lg p-6 bg-card">
+              <SchemaViewerWithHighlight schema={schema} />
+            </div>
+          }
+          raw={
+            <JsonViewer data={schema} title="Collection Schema JSON" defaultExpanded={false} />
+          }
+          example={
+            example ? (
+              <div className="grid lg:grid-cols-2 gap-6">
+                <div>
+                  <h2 className="text-xl font-semibold mb-4">Schema Structure</h2>
+                  <div className="border rounded-lg p-4 bg-card max-h-[800px] overflow-auto">
+                    <SchemaViewerWithHighlight schema={schema} />
+                  </div>
+                </div>
+                <div>
+                  <h2 className="text-xl font-semibold mb-4">Example Data</h2>
+                  <JsonViewer data={example} title="Open Source Pioneers Collection" defaultExpanded={false} />
                 </div>
               </div>
-              <div>
-                <h2 className="text-xl font-semibold mb-4">Example Data</h2>
-                <JsonViewer data={example} title="Open Source Pioneers Collection" defaultExpanded={false} />
-              </div>
-            </div>
-          </TabsContent>
-        )}
-      </Tabs>
+            ) : undefined
+          }
+        />
+      </Suspense>
     </div>
   )
 }
-

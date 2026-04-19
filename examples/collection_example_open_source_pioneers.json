@@ -128,7 +128,7 @@
       ]
     },
     {
-      "id": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+      "id": "https://fossda.theirstory.io/video/larry-augustin",
       "type": "OralHistory",
       "label": {
         "en": ["Larry Augustin Interview - VA Linux & SourceForge"]
@@ -258,7 +258,7 @@
       "interviews": [
         "https://fossda.org/interviews/linus-torvalds-2023",
         "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/eric-raymond-2023"
       ]
     },
@@ -268,7 +268,7 @@
       "type": "PERSON",
       "frequency": 3,
       "interviews": [
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
         "https://fossda.org/interviews/linus-torvalds-2023"
       ]
@@ -279,7 +279,7 @@
       "type": "ORGANIZATION",
       "frequency": 3,
       "interviews": [
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
         "https://fossda.org/interviews/linus-torvalds-2023"
       ]
@@ -292,7 +292,7 @@
       "interviews": [
         "https://fossda.org/interviews/linus-torvalds-2023",
         "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/eric-raymond-2023",
         "https://fossda.org/interviews/bruce-perens-2024"
       ]
@@ -303,7 +303,7 @@
       "type": "PRODUCT",
       "frequency": 2,
       "interviews": [
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/eric-raymond-2023"
       ]
     }
@@ -317,7 +317,7 @@
       "interviews": [
         "https://fossda.org/interviews/linus-torvalds-2023",
         "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/eric-raymond-2023",
         "https://fossda.org/interviews/bruce-perens-2024"
       ]
@@ -328,7 +328,7 @@
       "description": "Building businesses around open source software",
       "frequency": 3,
       "interviews": [
-        "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "https://fossda.theirstory.io/video/larry-augustin",
         "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
         "https://fossda.org/interviews/eric-raymond-2023"
       ]

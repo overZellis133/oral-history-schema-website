@@ -56,7 +56,7 @@ Collections provide cross-interview analysis:
     "interviews": [
       "https://fossda.org/interviews/linus-torvalds-2023",
       "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
-      "https://fossda.org/interviews/larry-augustin-2024-04-16",
+      "https://fossda.theirstory.io/video/larry-augustin",
       "https://fossda.org/interviews/eric-raymond-2023"
     ]
   }
@@ -74,7 +74,7 @@ Collections provide cross-interview analysis:
     "name": "Commercializing Open Source",
     "frequency": 3,
     "interviews": [
-      "https://fossda.org/interviews/larry-augustin-2024-04-16",
+      "https://fossda.theirstory.io/video/larry-augustin",
       "https://fossda.org/interviews/jon-maddog-hall-2024-03-20",
       "https://fossda.org/interviews/eric-raymond-2023"
     ]
@@ -373,7 +373,7 @@ Don't include full interview objects in collections:
 ```json
 // ✅ Good - Reference only
 {
-  "id": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+  "id": "https://fossda.theirstory.io/video/larry-augustin",
   "type": "OralHistory",
   "label": {"en": ["Larry Augustin Interview"]},
   "thumbnail": [...]

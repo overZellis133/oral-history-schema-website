@@ -3,7 +3,7 @@
     "http://www.w3.org/ns/anno.jsonld",
     "http://iiif.io/api/presentation/3/context.json"
   ],
-  "id": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+  "id": "https://fossda.theirstory.io/video/larry-augustin",
   "type": "OralHistory",
   "label": {
     "en": ["Larry Augustin Interview - FOSSDA Oral History Project"]
@@ -890,7 +890,7 @@
         "language": "en"
       },
       "target": {
-        "source": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "source": "https://fossda.theirstory.io/video/larry-augustin",
         "selector": {
           "type": "FragmentSelector",
           "start": 144,
@@ -916,7 +916,7 @@
         "language": "en"
       },
       "target": {
-        "source": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "source": "https://fossda.theirstory.io/video/larry-augustin",
         "selector": {
           "type": "FragmentSelector",
           "start": 335,
@@ -942,7 +942,7 @@
         "language": "en"
       },
       "target": {
-        "source": "https://fossda.org/interviews/larry-augustin-2024-04-16",
+        "source": "https://fossda.theirstory.io/video/larry-augustin",
         "selector": {
           "type": "FragmentSelector",
           "start": 435,

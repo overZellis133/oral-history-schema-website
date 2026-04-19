@@ -403,7 +403,7 @@ async function addInterviewToCollection(interviewId, collectionId) {
 
 ```
 # Individual interviews
-https://fossda.org/interviews/larry-augustin-2024-04-16
+https://fossda.theirstory.io/video/larry-augustin
 https://fossda.org/interviews/jon-maddog-hall-2024-03-20
 
 # Collections
@@ -411,8 +411,8 @@ https://fossda.org/collections/open-source-pioneers
 https://fossda.org/collections/technology-history
 
 # Specific segments (with time anchors)
-https://fossda.org/interviews/larry-augustin-2024-04-16#t=144
-https://fossda.org/interviews/larry-augustin-2024-04-16#seg-005
+https://fossda.theirstory.io/video/larry-augustin#t=144
+https://fossda.theirstory.io/video/larry-augustin#seg-005
 
 # Clips
 https://fossda.org/clips/larry-augustin-tractor-philosophy

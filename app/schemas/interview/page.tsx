@@ -50,7 +50,7 @@ export default async function InterviewSchemaPage() {
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold mb-4">Example Data</h2>
-                  <JsonViewer data={example} title="Larry Augustin Example" defaultExpanded={false} />
+                  <JsonViewer data={example} title="Larry Augustin Example" defaultExpanded={true} />
                 </div>
               </div>
             ) : undefined

@@ -50,7 +50,7 @@ export default async function CollectionSchemaPage() {
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold mb-4">Example Data</h2>
-                  <JsonViewer data={example} title="Open Source Pioneers Collection" defaultExpanded={false} />
+                  <JsonViewer data={example} title="Open Source Pioneers Collection" defaultExpanded={true} />
                 </div>
               </div>
             ) : undefined
